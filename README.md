@@ -23,37 +23,41 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 ### Endpoints:
 
-- ```/courses/{course-name}```
+- ```/courses/:course-name```
 
-- ```/courses/{course-name}/sections```
+- ```/courses/:course-name/sections```
 
-- ```/courses/{course-name}/sections/{section-name}```
+- ```/courses/:course-name/sections/:section-name```
 
-- ```/courses/{course-name}/sections/{section-name}/lessons```
+- ```/courses/:course-name/sections/:section-name/lessons```
 
-- ```/courses/{course-name}/sections/{section-name}/lessons/{lesson-name}```
+- ```/courses/:course-name/sections/:section-name/lessons/:lesson-name```
 
-- ```/courses/{course-name}/forum```
+- ```/courses/:course-name}/forum```
 
-- ```/courses/{course-name}/forum/{question-name}```
+- ```/courses/:course-name}/forum/:question-name```
 
 -----------
 
-- ```/accounts/{account-name}```
+- ```/accounts/:account-name```
 
 -----------
 
 - ```/topics```
 
-- ```/topics/{topic-name}/courses```
+- ```/topics/:topic-name/courses```
 
 -----------
 
-- ```/recommendations```
+- ```/recommendations/:uname/:pw```
+
+- ```/recommendations/:uname/:pw/courses```
+
+- ```/recommendations/:uname/:pw/users```
 
 -----------
 
-- ```/notifications```
+- ```/notifications/:uname/:pw```
 
 ## App:
 
