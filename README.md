@@ -39,8 +39,6 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 -----------
 
-- ```/accounts```
-
 - ```/accounts/{account-name}```
 
 -----------
