@@ -23,8 +23,6 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 ### Endpoints:
 
-- ```/courses```
-
 - ```/courses/{course-name}```
 
 - ```/courses/{course-name}/sections```
