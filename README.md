@@ -45,8 +45,6 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 - ```/topics```
 
-- ```/topics/{topic-name}```
-
 - ```/topics/{topic-name}/courses```
 
 -----------
