@@ -63,7 +63,7 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 ## App:
 
-In the app there are four sections:
+In the electron app there are four sections:
 
 - **Notifications**
 
