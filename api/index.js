@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT;
+app.use(express.json());
+// const port = process.env.PORT;
 
-app.get("/", (req, res) => {
-    // do something
+app.get("/:mes", (req, res) => {
+    res.send(req.params.mes)
 });
 
-app.listen(port);
+app.listen(3000);
