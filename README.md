@@ -11,7 +11,7 @@ whoose courses you like. As an author of a course you will get notified whenever
 someone liked your course or asked a question in its forum. You can also get notified
 when somebody followed you or answered a questions which you've asked in the forum of a course.
 When you create a course, you can choose up to 5 topics. You can like topics so that you
-can get good recommendations. If a recommendation is not interesting to you, you can tell the program by clicking a button.
+can get good recommendations.
 
 ## How it works:
 
