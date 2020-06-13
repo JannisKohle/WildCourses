@@ -4,38 +4,28 @@ app.use(express.json());
 // const port = process.env.PORT;
 
 // Example:
-app.get("/:mes", (req, res) => {
-    res.send(req.params.mes);
+app.get("/test", (req, res) => {
+    res.send({"your message": req.query.msg});
 });
 
 
 
-app.get("/accounts/:account-name", (req, res) => {
-    res.send({"message": "very good response"});
+
+
+app.get("/recommendations", (req, res) => {
+    res.send({"message": "very good response", "your id": req.query.userId, "your password": req.query.pw});
 });
 
-app.get("/topics", (req, res) => {
-    res.send({"message": "very good response"});
+app.get("/recommendations/courses", (req, res) => {
+    res.send({"message": "very good response", "your id": req.query.userId, "your password": req.query.pw});
 });
 
-app.get("/topics/:topic-name/courses", (req, res) => {
-    res.send({"message": "very good response"});
+app.get("/recommendations/users", (req, res) => {
+    res.send({"message": "very good response", "your id": req.query.userId, "your password": req.query.pw});
 });
 
-app.get("/recommendations/:uname/:pw", (req, res) => {
-    res.send({"message": "very good response"});
-});
-
-app.get("/recommendations/:uname/:pw/courses", (req, res) => {
-    res.send({"message": "very good response"});
-});
-
-app.get("/recommendations/:uname/:pw/users", (req, res) => {
-    res.send({"message": "very good response"});
-});
-
-app.get("/notifications/:uname/:pw", (req, res) => {
-    res.send({"message": "very good response"});
+app.get("/notifications", (req, res) => {
+    res.send({"message": "very good response", "your id": req.query.userId, "your password": req.query.pw});
 });
 
 app.listen(3000);
