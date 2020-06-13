@@ -19,29 +19,53 @@ Frontend (Node, Electron) <---> (*maybe* API-Communication (Python)) <---> API (
 
 OR without API-Communication in Python - Communication in Node from Frontend (I don't know)
 
+## App:
+
+In the electron app there are four sections you can navigate to:
+
+- **Notifications**
+
+- **Explore** (recommendations and searching)
+
+- **Courses**
+
+- **Settings**
+
 ## API:
 
-### Endpoints:
+The api is made with Node and Express, used by the Frontend (made with Node and Electron) and tested in Python.
 
-- ```/courses/:courseId?userId={something}&pw={something}``` (Everybody can go to this page, frontend would look different if bought)
+### API Endpoints:
 
-- ```/courses/:courseId/sections?userId={something}&pw={something}```
+At the end of every url there must be query parameters for userId and password: ```?userId={something}&pw={something}```
 
-- ```/courses/:courseId/sections/:sectionName?userId={something}&pw={something}```
+- ```/courses/:courseId```
 
-- ```/courses/:courseId/sections/:sectionName/lessons?userId={something}&pw={something}```
+- ```/courses/:courseId/sections```
 
-- ```/courses/:courseId/sections/:sectionName/lessons/:lessonName?userId={something}&pw={something}```
+- ```/courses/:courseId/sections/:sectionName```
 
-- ```/courses/:courseId}/forum?userId={something}&pw={something}```
+- ```/courses/:courseId/sections/:sectionName/lessons```
 
-- ```/courses/:courseId}/forum/:questionName?userId={something}&pw={something}```
+- ```/courses/:courseId/sections/:sectionName/lessons/:lessonName```
 
-- ```/courses/list?userId={something}&pw={something}```
+- ```/courses/:courseId/forum```
+
+- ```/courses/:courseId/forum/:questionName```
+
+- ```/courses/list```
 
 -----------
 
 - ```/accounts/:accountId```
+
+- ```/accounts/:accountId/followers```
+
+- ```/accounts/:accountId/following```
+
+- ```/accounts/:accountId/courses``` <- Courses which the person made, nobody can see courses that the person bought
+
+- ```/accounts/:accountId/likedcourses```
 
 -----------
 
@@ -51,24 +75,44 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 -----------
 
-- ```/recommendations?userId={something}&pw={something}```
+- ```/recommendations```
 
-- ```/recommendations?userId={something}&pw={something}/courses```
+- ```/recommendations/courses```
 
-- ```/recommendations?userId={something}&pw={something}/users```
+- ```/recommendations/users```
 
 -----------
 
-- ```/notifications?userId={something}&pw={something}```
+- ```/notifications```
 
-## App:
+## DataBase:
 
-In the electron app there are four sections:
+It's MongoDB. Often you can see this: {name: id, ...}
 
-- **Notifications**
+### How courses are stored:
 
-- **Explore** (recommendations and searching)
+```json
+{
+    "name": "Ultimate Express.js Course",
+    "id": "COURSE_937428",
+    "price": 25.00,
+    "topics": ["api", "nodejs", "expressjs", "javascript"],
+    "authors": {"Benjamin Blümchen": "his id"},
+    "likes": {"Jannis Kohle": "his id", "The Javascripter": "his id", "Darth Vader": "his id"},
+    "buyers": {"Jannis Kohle": "his id", "The Javascripter": "his id", "Darth Vader": "his id", "The Javascript Hater": "his id", "The stupid Benjamin": "his id"}
+}
+```
 
-- **Courses**
+### How accounts are stored:
 
-- **Settings**
+```json
+{
+    "name": "Darth Vader",
+    "id": "USER_257195",
+    "ownCourses": {"How to be cool": "its id", "The PHP bootcamp": "its id"},
+    "boughtCourses": {"Ultimate Express.js Course": "its id", "How to become smart": "its id"},
+    "followers": {"The Javascripter": "his id"},
+    "following": {"The stupid Benjamin": "his id", "Jannis Kohle": "his id"},
+    "likedCourses": {"The Ultimate Express.js Course": "its id"}
+}
+```
