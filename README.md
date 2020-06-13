@@ -23,23 +23,25 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 ### Endpoints:
 
-- ```/courses/:course-name```
+- ```/courses/:course-id?userId={something}&pw={something}``` (Everybody can go to this page, frontend would look different if bought)
 
-- ```/courses/:course-name/sections```
+- ```/courses/:course-id/sections?userId={something}&pw={something}```
 
-- ```/courses/:course-name/sections/:section-name```
+- ```/courses/:course-id/sections/:section-name?userId={something}&pw={something}```
 
-- ```/courses/:course-name/sections/:section-name/lessons```
+- ```/courses/:course-id/sections/:section-name/lessons?userId={something}&pw={something}```
 
-- ```/courses/:course-name/sections/:section-name/lessons/:lesson-name```
+- ```/courses/:course-id/sections/:section-name/lessons/:lesson-name?userId={something}&pw={something}```
 
-- ```/courses/:course-name}/forum```
+- ```/courses/:course-id}/forum?userId={something}&pw={something}```
 
-- ```/courses/:course-name}/forum/:question-name```
+- ```/courses/:course-id}/forum/:question-name?userId={something}&pw={something}```
+
+- ```/courses/list?userId={something}&pw={something}```
 
 -----------
 
-- ```/accounts/:account-name```
+- ```/accounts/:account-id```
 
 -----------
 
@@ -49,15 +51,15 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 -----------
 
-- ```/recommendations/:uname/:pw```
+- ```/recommendations?userId={something}&pw={something}```
 
-- ```/recommendations/:uname/:pw/courses```
+- ```/recommendations?userId={something}&pw={something}/courses```
 
-- ```/recommendations/:uname/:pw/users```
+- ```/recommendations?userId={something}&pw={something}/users```
 
 -----------
 
-- ```/notifications/:uname/:pw```
+- ```/notifications?userId={something}&pw={something}```
 
 ## App:
 
