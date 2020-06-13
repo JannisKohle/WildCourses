@@ -87,7 +87,7 @@ At the end of every url there must be query parameters for userId and password: 
 
 ## DataBase:
 
-It's MongoDB. Often you can see this: {name: id, ...}
+It's MongoDB. You can often see something like this: {name: id, ...}
 
 ### How courses are stored:
 
