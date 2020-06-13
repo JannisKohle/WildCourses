@@ -23,31 +23,31 @@ OR without API-Communication in Python - Communication in Node from Frontend (I 
 
 ### Endpoints:
 
-- ```/courses/:course-id?userId={something}&pw={something}``` (Everybody can go to this page, frontend would look different if bought)
+- ```/courses/:courseId?userId={something}&pw={something}``` (Everybody can go to this page, frontend would look different if bought)
 
-- ```/courses/:course-id/sections?userId={something}&pw={something}```
+- ```/courses/:courseId/sections?userId={something}&pw={something}```
 
-- ```/courses/:course-id/sections/:section-name?userId={something}&pw={something}```
+- ```/courses/:courseId/sections/:sectionName?userId={something}&pw={something}```
 
-- ```/courses/:course-id/sections/:section-name/lessons?userId={something}&pw={something}```
+- ```/courses/:courseId/sections/:sectionName/lessons?userId={something}&pw={something}```
 
-- ```/courses/:course-id/sections/:section-name/lessons/:lesson-name?userId={something}&pw={something}```
+- ```/courses/:courseId/sections/:sectionName/lessons/:lessonName?userId={something}&pw={something}```
 
-- ```/courses/:course-id}/forum?userId={something}&pw={something}```
+- ```/courses/:courseId}/forum?userId={something}&pw={something}```
 
-- ```/courses/:course-id}/forum/:question-name?userId={something}&pw={something}```
+- ```/courses/:courseId}/forum/:questionName?userId={something}&pw={something}```
 
 - ```/courses/list?userId={something}&pw={something}```
 
 -----------
 
-- ```/accounts/:account-id```
+- ```/accounts/:accountId```
 
 -----------
 
 - ```/topics```
 
-- ```/topics/:topic-name/courses```
+- ```/topics/:topicName/courses```
 
 -----------
 
