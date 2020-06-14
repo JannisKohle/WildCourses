@@ -53,19 +53,19 @@ Many of the methods **GET** called automatically when another method is called.
 
 - ```/courses```: **GET** list of all courses, **POST** a new course, **DELETE** a course, **PATCH** to change info about any course
 
-- ```/courses/:courseId```: **GET** info about course, **PUT** & **PATCH** to change info about this course
+- ```/courses/:courseId```: **GET** info about course, **POST** new info about the course, **DELETE** info about the course, **PUT** & **PATCH** to change info about this course
 
 - ```/courses/:courseId/sections```: **GET** sections of course, **POST** a new section, **DELETE** a section, **PATCH** to change info about sections (e.g. sections' names)
 
-- ```/courses/:courseId/sections/:sectionName```: **GET** info about section, **DELETE** info about section, **POST** new info about section, **PUT** & **PATCH** to change info about section
+- ```/courses/:courseId/sections/:sectionId```: **GET** info about section, **DELETE** info about section, **POST** new info about section, **PUT** & **PATCH** to change info about section
 
-- ```/courses/:courseId/sections/:sectionName/lessons```: **GET** a list of lessons, **DELETE** a lesson, **POST** a new lesson, **PATCH** to change info about lessons (e.g. lessons' name)
+- ```/courses/:courseId/sections/:sectionId/lessons```: **GET** a list of lessons, **DELETE** a lesson, **POST** a new lesson, **PATCH** to change info about lessons (e.g. lessons' name)
 
-- ```/courses/:courseId/sections/:sectionName/lessons/:lessonName```: **GET** info about the lesson, **DELETE** info about section, **POST** new info about the lesson, **PUT** & **PATCH** to change info about the lesson
+- ```/courses/:courseId/sections/:sectionId/lessons/:lessonId```: **GET** info about the lesson, **DELETE** info about section, **POST** new info about the lesson, **PUT** & **PATCH** to change info about the lesson
 
 - ```/courses/:courseId/forum```: **GET** a list of the questions, **DELETE** a question, **POST** a new question, **PATCH** to change info about the questions
 
-- ```/courses/:courseId/forum/:questionName```: **GET** info about this question, **DELETE** info about this question, **POST** new info about this question, **PUT** & **PATCH** to change info about this question
+- ```/courses/:courseId/forum/:questionId```: **GET** info about this question, **DELETE** info about this question, **POST** new info about this question, **PUT** & **PATCH** to change info about this question
 
 -----------
 
