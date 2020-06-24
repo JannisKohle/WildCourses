@@ -3,19 +3,19 @@ const router = express.Router();
 
 
 
-router.get("/accounts/:accountId", (req, res) => {
+router.get("/:accountId", (req, res) => {
     res.send({"message": "very good response"});
 });
-router.post("/accounts/:accountId", (req, res) => {
+router.post("/:accountId", (req, res) => {
     res.send({"message": "very good response"});
 });
-router.delete("/accounts/:accountId", (req, res) => {
+router.delete("/:accountId", (req, res) => {
     res.send({"message": "very good response"});
 });
-router.put("/accounts/:accountId", (req, res) => {
+router.put("/:accountId", (req, res) => {
     res.send({"message": "very good response"});
 });
-router.patch("/accounts/:accountId", (req, res) => {
+router.patch("/:accountId", (req, res) => {
     res.send({"message": "very good response"});
 });
 

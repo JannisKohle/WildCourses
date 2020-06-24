@@ -3,15 +3,15 @@ const router = express.Router();
 
 
 
-router.get("/recommendations", (req, res) => {
+router.get("/", (req, res) => {
     res.send({"message": "very good response"});
 });
 
-router.get("/recommendations/courses", (req, res) => {
+router.get("/courses", (req, res) => {
     res.send({"message": "very good response"});
 });
 
-router.get("/recommendations/users", (req, res) => {
+router.get("/users", (req, res) => {
     res.send({"message": "very good response"});
 });
 

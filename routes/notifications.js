@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 
-router.get("/notifications", (req, res) => {
+router.get("/", (req, res) => {
     res.send({"message": "very good response"});
 });
 

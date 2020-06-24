@@ -3,20 +3,20 @@ const router = express.Router();
 
 
 
-router.get("/topics", (req, res) => {
+router.get("/", (req, res) => {
     res.send({"message": "very good response"});
 });
 
-router.get("/topics/:topic/courses", (req, res) => {
+router.get("/:topic/courses", (req, res) => {
     res.send({"message": "very good response"});
 });
-router.delete("/topics/:topic/courses", (req, res) => {
+router.delete("/:topic/courses", (req, res) => {
     res.send({"message": "very good response"});
 });
-router.post("/topics/:topic/courses", (req, res) => {
+router.post("/:topic/courses", (req, res) => {
     res.send({"message": "very good response"});
 });
-router.patch("/topics/:topic/courses", (req, res) => {
+router.patch("/:topic/courses", (req, res) => {
     res.send({"message": "very good response"});
 });
 
