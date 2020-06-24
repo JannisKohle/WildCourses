@@ -37,8 +37,6 @@ The api is made with Node and Express, used by the Frontend (made with Node and 
 
 ### API Endpoints:
 
-At the end of every url there must be query parameters for userId and password: ```?userId={something}&pw={something}```
-
 Endpoints which contain a list of something (e.g. list of courses) do not have **PUT**, only
 **PATCH**. With **PATCH**, here you can change e.g. the name of an element in the list, but to change
 details about the element, use **PUT** or **PATCH** at the *element's* enpoint. In these lists, the elements
