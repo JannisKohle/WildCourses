@@ -1,6 +1,6 @@
 # WildCourses:
 
-A Desktop App for courses written in Node, Express, Mongo, Electron and Python
+A Website for courses written in Node, Express, Mongo, Vue and Python
 
 ## What it can do:
 
@@ -33,9 +33,9 @@ In the electron app there are four sections you can navigate to:
 
 ## API:
 
-The api is made with Node and Express, used by the Frontend (made with Node and Electron) and tested in Python.
+The api is made with Node and Express, used by the Frontend (made with Node and Vue probably) and tested in Python.
 
-### API Endpoints:
+### API Routes:
 
 Endpoints which contain a list of something (e.g. list of courses) do not have **PUT**, only
 **PATCH**. With **PATCH**, here you can change e.g. the name of an element in the list, but to change
